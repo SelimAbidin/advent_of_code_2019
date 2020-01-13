@@ -31,7 +31,7 @@ fn main() -> Result<(), Box<dyn std::error::Error + 'static>> {
 
     let result2: i32 = numbers
         .map(calc_real_req_fuel)
-        .fold(0, |acc: i32, curr: i32| acc + curr);
+        .fold(0, |acc: i32, curr: i32| acc + curr); //  I could use sum here instead of fold
     println!("Part 1 :\n{:?}", result1);
     println!("Part 2 :\n{:?}", result2);
     Ok(())
